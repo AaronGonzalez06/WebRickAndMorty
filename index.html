@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <script src="js/function.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1><img id="imgTitulo" src="./assets/Rick_and_Morty.svg.png"/></h1>
+        </header>
+        <main>
+            <nav>
+                <span id="botonera">
+                <div><a href="index.html">Characters</a></div>
+                <div><a href="fav.html">Favorites</a></div>
+                </span>
+            </nav>
+            <div id="search">
+                <div id="imput">
+                   <input name="nameSearch" id="nameSearch" type="text" placeholder="Search"/>
+                </div>
+                <div id="info">
+                    <span>
+                        <span class="colorStatus" style="background-color: #F0C419;">Alive</span>
+                        <span class="colorStatus" style="background-color: #FF6F61;"> Dead </span>
+                        <span class="colorStatus" style="background-color: #87CEEB;">Unknown </span>
+                    </span>
+                    <span>
+                        <input type="radio" id="alive" name="status" value="alive">
+                        <label for="opcion1">Alive</label>
+                        
+                        <input type="radio" id="dead" name="status" value="dead">
+                        <label for="opcion2">Dead</label>
+                        
+                        <input type="radio" id="unknown" name="status" value="unknownStatus">
+                        <label for="opcion3">Unknown</label>
+    
+                        <input type="radio" id="nada" name="status" value="nadaStatus">
+                        <label for="opcion3">Nothing</label>
+                    </span>
+
+                    <span>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="opcion1">Female</label>
+                        
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="opcion2">Male</label>
+                        
+                        <input type="radio" id="unknown" name="gender" value="unknownGender">
+                        <label for="opcion3">Unknown</label>
+    
+                        <input type="radio" id="genderless" name="gender" value="genderless">
+                        <label for="opcion3">Genderless</label>
+
+                        <input type="radio" id="nada" name="gender" value="nadaGender">
+                        <label for="opcion3">Nothing</label>
+                    </span>
+                </div>                
+            </div>
+            <section id="mostrar">
+                
+            </section>
+        </main>
+    </div>
+</body>
+</html>
